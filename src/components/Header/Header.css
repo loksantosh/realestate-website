@@ -1,0 +1,42 @@
+.h-wrapper {
+
+  color: white;
+}
+
+.h-container {
+  justify-content: space-around;
+  padding: 1rem 0;
+  color: var(--secondary);
+}
+
+.h-menu {
+  gap: 2rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media(max-width:768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .h-menu {
+    color: var(--black);
+    background: white;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 3rem;
+    padding: 3rem;
+    border-radius: 10px;
+    align-items: flex-start;
+    transition: all 300ms ease-in;
+    z-index: 99;
+  }
+
+}
